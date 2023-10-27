@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+ 
+    <style>
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color:rgb(250, 157, 238);
+            font-family: Verdana;
+            text-align:center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(248, 151, 151, 0.5);
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align:left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 5px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color:pink;
+            border: 1px solid #777;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+    
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<style>
+    body {
+        background-image: url('https://thumbs.dreamstime.com/z/job-search-online-concept-hand-touching-touchscreen-button-banner-blue-dark-background-new-opportunity-jobs-searching-228033659.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+    <h1 >Placement Registration Form</h1>
+   <style>
+    h1{
+     color: white}
+
+
+  </style>
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+               First Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+        
+          <div class="form-control">
+            <label for="name" id="label-name">
+               Last Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+          <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+        
+   <div class="form-control">
+            <label for="role" id="label-role">
+                Gender
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="Female">female</option>
+                <option value="Male">male</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+  <div class="form-control">
+            <label for="role" id="label-role">
+                No.of family members
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="Female">MORE THAN 5</option>
+                <option value="Male">4</option> 
+                <option value="other">3</option>
+                <option value="other">2</option>
+            <option value="other">ORPHAN</option>
+            </select>
+        </div>
+   
+    <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+        
+          <div class="form-control">
+            <label for="adhar number" id="label-adhar number">
+                Adhar number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="adhar number"
+                   placeholder="Enter your adhar number" />
+         </div>
+        
+         
+          <div class="form-control">
+            <label for="phone number" id="phone number">
+                Phone number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="phone number"
+                   placeholder="Enter your phone number" />
+        </div>
+        
+         <div class="form-control">
+            <label for="address" id="label-address">
+                Address
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="address"
+                   placeholder="Enter your address" />
+         </div>
+        
+         <div class="form-control">
+            <label for="village name" id="Village name">
+                Village name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="village name"
+                   placeholder="Enter your village name" />
+        </div>
+        
+          <div class="form-control">
+            <label for="district name" id="district name">
+                District name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="district name"
+                   placeholder="Enter your district name" />
+        </div>
+        <div class="form-control">
+            <label for="10-mark" id="label-mark">
+                10-mark
+            </label>
+
+            <!-- Input Type Text-->
+            <input type="text"
+                    id="10-mark"
+                    placeholder="Enter your 10-mark"/>
+        </div>
+        
+        
+         <div class="form-control">
+            <label for="12 mark" id="label-12 mark">
+                12-Mark
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="12 mark"
+                   placeholder="Enter your 12 mark" />
+        </div>
+         
+        
+        </div>
+          <div class="form-control">
+            <label for="role" id="label-role">
+                Qualification
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="Primary education">Primary education</option>
+                <option value="Higher education">Higher education</option>
+                <option value="Under graduate">Under graduate</option>
+                <option value="Post graduate">Post graduate</option>
+                <option value="Diploma/ITI">Diploma/ITI</option>
+                <option value="Others">Others</option>
+               
+            </select>
+                            
+    <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>Languages and Frameworks known
+                
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">C#</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Java</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Python</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">JavaScript</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">RDBMS</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">OS Basics</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">HTML</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">CSS</input></label>
+        </div>
+  
+</div>
+
+    <div class="form-control">
+            <label>COURSE
+                
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">Type writer</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Beautician</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Naan Mudhalavan</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">future skill</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Tally</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Nptel</input></label>
+       
+        </div>
+  
+</div>
+ <div class="form-control">
+      <label>Are you.....
+        </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp">First generation collage goer</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp"></input>None of the above</label>
+
+</div>
+
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
